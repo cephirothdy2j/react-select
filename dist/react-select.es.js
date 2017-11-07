@@ -2334,8 +2334,7 @@ var CreatableSelect = function (_React$Component) {
 			var _props4 = this.props,
 			    newOptionCreator = _props4.newOptionCreator,
 			    shouldKeyDownEventCreateNewOption = _props4.shouldKeyDownEventCreateNewOption,
-			    refProp = _props4.ref,
-			    restProps = objectWithoutProperties(_props4, ['newOptionCreator', 'shouldKeyDownEventCreateNewOption', 'ref']);
+			    restProps = objectWithoutProperties(_props4, ['newOptionCreator', 'shouldKeyDownEventCreateNewOption']);
 			var children = this.props.children;
 
 			// We can't use destructuring default values to set the children,
@@ -2359,9 +2358,6 @@ var CreatableSelect = function (_React$Component) {
 					if (_ref2) {
 						_this2.labelKey = _ref2.props.labelKey;
 						_this2.valueKey = _ref2.props.valueKey;
-					}
-					if (refProp) {
-						refProp(_ref2);
 					}
 				}
 			});
