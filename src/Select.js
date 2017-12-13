@@ -484,7 +484,7 @@ class Select extends React.Component {
 	}
 
 	getOptionLabel (op) {
-		return op[this.props.labelKey];
+		return op && op[this.props.labelKey] || ''; // rollbar #718
 	}
 
 	/**

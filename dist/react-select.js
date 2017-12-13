@@ -1117,7 +1117,7 @@ var Select$1 = function (_React$Component) {
 	}, {
 		key: 'getOptionLabel',
 		value: function getOptionLabel(op) {
-			return op[this.props.labelKey];
+			return op && op[this.props.labelKey] || ''; // rollbar #718
 		}
 
 		/**
